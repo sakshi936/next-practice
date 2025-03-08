@@ -2,7 +2,8 @@
 @theme {
   --color-white-100: #FFFFFFBF;
   --color-white: #FFFFFF;
-  --color-bg-dark: #E6E6E6;
+  --color-bg-dark: #F2F4F0;
+  --color-bg-base: #E6E6E6;
   --color-lime-green:#D0F255;
   --color-bg-light:#F7F7F7;
   --color-title:#003434;
