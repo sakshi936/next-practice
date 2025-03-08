@@ -1,3 +1,4 @@
+import exp from "constants";
 import { FC } from "react";
 
 export interface navItemsType {
@@ -5,7 +6,7 @@ export interface navItemsType {
 	page: FC;
 }
 export interface productItemsType {
-	item: string;
+	title: string;
 	component: FC;
 	desc: string;
 	icon: string;
@@ -16,20 +17,20 @@ export interface logoProps {
 	height?: number;
 }
 
-type Feature = {
-	name: string;
+export type feature = {
+	title: string;
 	desc: string;
 	icon: string;
 };
 
-type Device = {
-	name: string;
+export type device = {
+	title: string;
 	image: string;
 };
 
 export type InStorePaymentType = {
-	features: Feature[];
-	devices: Device[];
+	features: feature[];
+	devices: device[];
 };
 
 type PrepaidItem = {
@@ -43,8 +44,14 @@ export type PrepaidCategory = {
 	items: PrepaidItem[];
 };
 
-export interface productSidebarProps {
+export interface sidebarProps {
 	navItems: productItemsType[];
 	selected: string;
 	setSelected: (name: string) => void;
+	navTitle: string;
 }
+
+export type CreditProcessingTypes = {
+	section: string;
+	features: feature[];
+};

@@ -8,10 +8,10 @@ import Products from "@/components/tamplate/Products";
 export default function Home() {
 	return (
 		<main>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Hero />
 			{/* <Products /> */}
-			<Products />
+			{/* <Products /> */}
 		</main>
 	);
 }

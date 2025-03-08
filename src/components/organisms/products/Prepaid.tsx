@@ -5,7 +5,7 @@ function Prepaid() {
 		<div className="grid grid-cols-3 gap-6">
 			{prepaid.map((category, index) => (
 				<div key={index}>
-					<h3 className="text-sm font-medium mb-4 text-content-text ">{category.title}</h3>
+					<h3 className="text-sm font-medium mb-6 text-content-text ">{category.title}</h3>
 					<ul className="space-y-4">
 						{category.items.map((item) => (
 							<li key={item.name} className="flex gap-3 items-start min-h-16">
