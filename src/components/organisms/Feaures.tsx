@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { feature } from "@/types/types";
 import Grid from "../atoms/Grid";
 

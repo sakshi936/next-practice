@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { InStorePayment } from "@/data/data";
 import Features from "../Feaures";
 import Device from "../../atoms/Device";

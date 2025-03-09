@@ -1,4 +1,3 @@
-import { features } from "process";
 import Grid from "@/components/atoms/Grid";
 import { creditProcessing } from "@/data/data";
 function CreditProcessing() {

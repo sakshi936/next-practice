@@ -1,18 +1,12 @@
-import { feature, navItemsType } from "@/types/types";
 import Blogs from "@/components/organisms/blogs/Blogs";
 import Developers from "@/components/organisms/developers/Developers";
 import Partners from "@/components/organisms/partnersn/Partners";
 import Solutions from "@/components/tamplate/Solutions";
 import Products from "@/components/tamplate/Products";
-import { InStorePaymentType } from "@/types/types";
-import { PrepaidCategory } from "@/types/types";
-import { productItemsType } from "@/types/types";
 import Prepaid from "@/components/organisms/products/Prepaid";
 import InStorePayments from "@/components/organisms/products/InStorePayments";
-// import { onlinePaymentType } from "@/types/types";
 import OnlinePayments from "@/components/organisms/products/OnlinePayments";
 import Api from "@/components/organisms/products/Api";
-import { CreditProcessingTypes } from "@/types/types";
 import CreditProcessing from "@/components/organisms/products/CreditProcessing";
 import ByBusiness from "@/components/organisms/solutions/ByBusiness";
 import ByIndustry from "@/components/organisms/solutions/ByIndustry";
