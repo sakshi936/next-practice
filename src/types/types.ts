@@ -43,6 +43,7 @@ export type PrepaidCategory = {
 	items: PrepaidItem[];
 };
 
+// sidebar props types
 export interface sidebarProps {
 	navItems: productItemsType[];
 	selected: string;

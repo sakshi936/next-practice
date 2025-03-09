@@ -12,7 +12,7 @@ export default function Products() {
 	return (
 		<div className="flex gap-4 w-full h-fit bg-bg-dark absolute px-10 py-5">
 			<Sidebar navItems={productItems} selected={selected} setSelected={setSelected} navTitle={"Products"} />
-			{selectedItem && <ContentSection>{<selectedItem.component />}</ContentSection>}
+			{selectedItem && <ContentSection className="w-[1016px]">{<selectedItem.component />}</ContentSection>}
 		</div>
 	);
 }
