@@ -8,12 +8,10 @@ import { Menu, X } from "lucide-react";
 import MoblieMenu from "./MoblieMenu";
 
 export default function Navbar() {
-	// const [ActiveComponent, setActiveComponent] = useState<FC | null>(null);
 	const [ActiveComponent, setActiveComponent] = useState(" ");
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 	const activeItem = navItems.find((item) => item.name === ActiveComponent);
 	// console.log(activeItem);
-	const menuItems = ["Products", "Solutions", "Partners", "Developers", "Blogs"];
 	return (
 		<>
 			<nav className="hidden lg:flex justify-between items-center py-[11px] px-[60px]  bg-white fixed top-0 left-0 w-full z-10">
@@ -47,7 +45,6 @@ export default function Navbar() {
 			{/* Mobile Menu */}
 			<div className={`lg:hidden absolute w-full top-[56px] z-10 bg-white h-full transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4 h-screen`}>
 				<MoblieMenu items={navItems} />
-				{/* <ContactBtn className="mt-5 w-full" /> */}
 			</div>
 		</>
 	);
