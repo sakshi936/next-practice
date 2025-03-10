@@ -2,7 +2,7 @@ import { FeaturesProps } from "@/types/types";
 import Grid from "../atoms/Grid";
 import Image from "next/image";
 
-function Features({ features, category }: FeaturesProps) {
+function Features({ features, category, className }: FeaturesProps) {
 	return (
 		<>
 			{category && (
@@ -12,7 +12,7 @@ function Features({ features, category }: FeaturesProps) {
 				</div>
 			)}
 
-			<Grid className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 " features={features} />
+			<Grid className={`gap-6`} features={features} />
 		</>
 	);
 }

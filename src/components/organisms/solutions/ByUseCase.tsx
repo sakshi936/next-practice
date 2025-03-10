@@ -1,7 +1,7 @@
 import { byUseCase } from "@/data/data";
-import Grid from "@/components/atoms/Grid";
+import Features from "../Feaures";
 function ByUseCase() {
-	return <Grid features={byUseCase} className="grid grid-cols-2 gap-7" />;
+	return <Features features={byUseCase} className="gap-x-7 gap-y-7" category="By use Case" />;
 }
 
 export default ByUseCase;

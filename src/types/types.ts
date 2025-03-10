@@ -74,4 +74,5 @@ export interface mobileSubMenuProps {
 export interface FeaturesProps {
 	features: feature[];
 	category?: string;
+	className?: string;
 }

@@ -1,9 +1,10 @@
 import Grid from "@/components/atoms/Grid";
 import { byIndustry } from "@/data/data";
 import React from "react";
+import Features from "../Feaures";
 
 function ByIndustry() {
-	return <Grid features={byIndustry} className="grid grid-cols-2 gap-x-7 gap-y-1" />;
+	return <Features features={byIndustry} className="gap-7" category="By Industry" />;
 }
 
 export default ByIndustry;

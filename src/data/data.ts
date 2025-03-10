@@ -210,21 +210,33 @@ export const byUseCase = [
 	{ title: "Marketing enablement", desc: "Accept & Manage Payments", icon: "/images/icon1.png" },
 ];
 
-export const partners = [
-	{ name: "Shopify", icon: "/images/icon1.png" },
-	{ name: "Darwin Box", icon: "/images/icon1.png" },
-	{ name: "Amadeus", icon: "/images/icon1.png" },
-	{ name: "Magento", icon: "/images/icon1.png" },
-	{ name: "Woocommerce", icon: "/images/icon1.png" },
-];
+export const partners = {
+	heading: "For Partners",
+	desc: "Get access to diverse tools to help grow your business",
+	features: [
+		{ name: "Shopify", icon: "/images/icon1.png" },
+		{ name: "Darwin Box", icon: "/images/icon1.png" },
+		{ name: "Amadeus", icon: "/images/icon1.png" },
+		{ name: "Magento", icon: "/images/icon1.png" },
+		{ name: "Woocommerce", icon: "/images/icon1.png" },
+	],
+};
+export const developersTools = {
+	heading: "For Developers",
+	desc: "Get access to diverse tools to help grow your business",
+	features: [
+		{ name: "Platform", icon: "/images/icon1.png" },
+		{ name: "Support", icon: "/images/icon1.png" },
+		{ name: "API", icon: "/images/icon1.png" },
+	],
+};
 
-export const developersTools = [
-	{ name: "Platform", icon: "/images/icon1.png" },
-	{ name: "Support", icon: "/images/icon1.png" },
-	{ name: "API", icon: "/images/icon1.png" },
-];
-export const blogs = [
-	{ name: "Blog", icon: "/images/icon1.png" },
-	{ name: "Whitepaper", icon: "/images/icon1.png" },
-	{ name: "Case-studies ", icon: "/images/icon1.png" },
-];
+export const blogs = {
+	heading: "PineLabs resources",
+	desc: "Get access to diverse tools to help grow your business",
+	features: [
+		{ name: "Blog", icon: "/images/icon1.png" },
+		{ name: "Whitepaper", icon: "/images/icon1.png" },
+		{ name: "Case-studies ", icon: "/images/icon1.png" },
+	],
+};
