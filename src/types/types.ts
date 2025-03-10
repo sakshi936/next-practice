@@ -1,4 +1,4 @@
-import MobileGrid from "@/components/atoms/MoblieMenu";
+import MobileGrid from "@/components/molecules/MoblieMenu";
 import { FC } from "react";
 
 export interface navItemsType {
@@ -61,7 +61,17 @@ export type CreditProcessingTypes = {
 // 	title: string;
 // 	icon?: string;
 // };
-export interface mobileGridProps {
+export interface mobileMenuProps {
 	items: navItemsType[];
 	className?: string;
+}
+export interface mobileSubMenuProps {
+	items: productItemsType[];
+	className?: string;
+	category?: string;
+}
+
+export interface FeaturesProps {
+	features: feature[];
+	category?: string;
 }

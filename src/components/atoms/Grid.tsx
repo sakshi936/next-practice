@@ -3,12 +3,12 @@ import { feature } from "@/types/types";
 
 interface FeaturesProps {
 	features: feature[];
-	className: string;
+	className?: string;
 }
 
 function Grid({ features, className }: FeaturesProps) {
 	return (
-		<div className={` ${className}`}>
+		<div className={` ${className} bg-white`}>
 			{features.map((feature, index) => (
 				<div key={index} className="flex items-start gap-3 min-h-14">
 					<Image src={feature.icon} alt={feature.title} width={40} height={40} />

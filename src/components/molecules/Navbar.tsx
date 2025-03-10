@@ -5,7 +5,7 @@ import { navItems } from "@/data/data";
 import { ContactBtn } from "../atoms/ContactBtn";
 import React from "react";
 import { Menu, X } from "lucide-react";
-import MoblieMenu from "../atoms/MoblieMenu";
+import MoblieMenu from "./MoblieMenu";
 
 export default function Navbar() {
 	// const [ActiveComponent, setActiveComponent] = useState<FC | null>(null);
@@ -35,7 +35,7 @@ export default function Navbar() {
 					</li>
 				</ul>
 			</nav>
-			<div className="hidden md:block absolute w-full top-[74px] z-0 ">{activeItem && <activeItem.page />}</div>
+			<div className="hidden lg:block absolute w-full top-[74px] z-0 ">{activeItem && <activeItem.page />}</div>
 			{/* Moblie Nav */}
 			<nav className="flex justify-between items-center lg:hidden px-4 py-4 fixed top-0 left-0 w-full bg-white-100">
 				<Logo width={94} height={24} />
@@ -45,7 +45,7 @@ export default function Navbar() {
 			</nav>
 
 			{/* Mobile Menu */}
-			<div className={`absolute w-full top-[56px] z-10 bg-white transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4 h-screen`}>
+			<div className={`lg:hidden absolute w-full top-[56px] z-10 bg-white h-full transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4 h-screen`}>
 				<MoblieMenu items={navItems} />
 				{/* <ContactBtn className="mt-5 w-full" /> */}
 			</div>

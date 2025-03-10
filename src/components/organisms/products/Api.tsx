@@ -1,7 +1,7 @@
 import { apiDpi } from "@/data/data";
-import Grid from "@/components/atoms/Grid";
+import Features from "../Feaures";
 function Api() {
-	return <Grid features={apiDpi} className="grid grid-cols-3 gap-6" />;
+	return <Features features={apiDpi} category="Apis for Dpi" />;
 }
 
 export default Api;

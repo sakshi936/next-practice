@@ -6,7 +6,7 @@ interface DeviceProps {
 }
 function Device({ device }: DeviceProps) {
 	return (
-		<div key={device.title} className="relative bg-bg-light p-4 rounded-lg  max-w-[172px] h-[208px]">
+		<div key={device.title} className="relative bg-bg-light p-4 rounded-lg min-w-[140px] w-[172px] lg:w-auto lg:min-w-auto  max-w-[172px] h-[208px]">
 			<div className="flex  items-start justify-between">
 				<h2 className="font-semibold text-base text-title mb-4">{device.title}</h2>
 				<span className="w-[28px] h-[28px] bg-white rounded-full cursor-pointer">
