@@ -45,9 +45,9 @@ export default function Navbar() {
 			</nav>
 
 			{/* Mobile Menu */}
-			<div className={`absolute w-full top-[56px] z-10 bg-white transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4`}>
-				<MoblieMenu items={menuItems} className="h-screen" />
-				<ContactBtn className="mt-5 w-full" />
+			<div className={`absolute w-full top-[56px] z-10 bg-white transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4 h-screen`}>
+				<MoblieMenu items={navItems} />
+				{/* <ContactBtn className="mt-5 w-full" /> */}
 			</div>
 		</>
 	);

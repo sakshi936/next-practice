@@ -1,3 +1,4 @@
+import MobileGrid from "@/components/atoms/MoblieMenu";
 import { FC } from "react";
 
 export interface navItemsType {
@@ -19,7 +20,7 @@ export interface logoProps {
 export type feature = {
 	title: string;
 	desc: string;
-	icon: string;
+	icon?: string;
 };
 
 export type device = {
@@ -55,3 +56,12 @@ export type CreditProcessingTypes = {
 	section: string;
 	features: feature[];
 };
+
+// export type mobileFeature = {
+// 	title: string;
+// 	icon?: string;
+// };
+export interface mobileGridProps {
+	items: navItemsType[];
+	className?: string;
+}
