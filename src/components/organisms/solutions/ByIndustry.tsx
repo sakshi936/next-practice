@@ -1,4 +1,3 @@
-import Grid from "@/components/atoms/Grid";
 import { byIndustry } from "@/data/data";
 import React from "react";
 import Features from "../Feaures";

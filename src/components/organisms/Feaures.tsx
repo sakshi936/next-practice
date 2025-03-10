@@ -12,7 +12,7 @@ function Features({ features, category, className }: FeaturesProps) {
 				</div>
 			)}
 
-			<Grid className={`gap-6`} features={features} />
+			<Grid className={`${className}`} features={features} />
 		</>
 	);
 }
