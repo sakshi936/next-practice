@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { mobileSubMenuProps } from "@/types/types";
 import { useState } from "react";
-import { ContactBtn } from "../atoms/ContactBtn";
 
 function MoblieSubMenu({ items, className, category }: mobileSubMenuProps) {
 	const [selectedPage, setSelectedPage] = useState("");

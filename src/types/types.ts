@@ -1,4 +1,3 @@
-import MobileGrid from "@/components/molecules/MoblieMenu";
 import { FC } from "react";
 
 export interface navItemsType {
