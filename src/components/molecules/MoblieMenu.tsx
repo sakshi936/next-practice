@@ -21,7 +21,7 @@ function MoblieMenu({ items, className }: mobileMenuProps) {
 							<Image src="/images/next.png" alt="next" width={40} height={40} />
 						</li>
 					))}
-					<li className="mt-28 pb-5">
+					<li className="absolute w-full left-0 px-4 bottom-14">
 						<ContactBtn className="w-full" />
 					</li>
 				</ul>

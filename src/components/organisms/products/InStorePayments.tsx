@@ -7,7 +7,7 @@ export default function InStorePayments() {
 	return (
 		<div>
 			{/* Features Section */}
-			<Features features={features} category="In Store Payments" />
+			<Features features={features} category="In Store Payments" className="grid-cols-3 gap-y-7 lg:gap-y-14" />
 
 			<hr className="my-10 border-gray-200" />
 

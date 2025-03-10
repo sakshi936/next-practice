@@ -35,7 +35,7 @@ export default function Navbar() {
 			</nav>
 			<div className="hidden lg:block absolute w-full top-[74px] z-0 ">{activeItem && <activeItem.page />}</div>
 			{/* Moblie Nav */}
-			<nav className="flex justify-between items-center lg:hidden px-4 py-4 fixed top-0 left-0 w-full bg-white-100">
+			<nav className="flex justify-between items-center lg:hidden px-4 py-4 fixed top-0 left-0 w-full bg-white z-10">
 				<Logo width={94} height={24} />
 				<span className="w-4 font-extrabold text-title text-2xl" onClick={() => setIsOpen(!isOpen)}>
 					{isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -43,7 +43,7 @@ export default function Navbar() {
 			</nav>
 
 			{/* Mobile Menu */}
-			<div className={`lg:hidden absolute w-full top-[56px] z-10 bg-white h-full transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4 h-screen`}>
+			<div className={`lg:hidden absolute w-full top-[56px] z-0 bg-white h-full transition-all duration-300 ${isOpen ? "block" : "hidden"} p-4 h-auto`}>
 				<MoblieMenu items={navItems} />
 			</div>
 		</>
