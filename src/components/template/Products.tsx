@@ -8,6 +8,8 @@ import MoblieSubMenu from "../organisms/MobileSubMenu";
 export default function Products() {
 	const [selected, setSelected] = useState(productItems[0].title);
 
+	console.log(`selected ${selected}`);
+
 	const selectedItem = productItems.find((item) => item.title === selected);
 
 	return (
@@ -18,7 +20,7 @@ export default function Products() {
 			</div>
 			{/* Mobile view */}
 			<div className="lg:hidden">
-				<MoblieSubMenu items={productItems} category="Products" />
+				<MoblieSubMenu items={productItems} activePage={selected} setActivePage={setSelected} navTitle="Products" />
 			</div>
 		</>
 	);

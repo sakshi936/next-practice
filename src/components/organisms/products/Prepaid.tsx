@@ -3,6 +3,7 @@ import { prepaid } from "@/data/data";
 function Prepaid() {
 	return (
 		<>
+			{/* go back button */}
 			<div className="lg:hidden flex items-end mb-8 ">
 				<Image src="/images/chevron-right.png" alt="next" width={20} height={20} className=" rotate-180" />
 				<h2 className="text-sm font-medium text-title ">Prepaid</h2>

@@ -67,7 +67,9 @@ export interface mobileMenuProps {
 export interface mobileSubMenuProps {
 	items: productItemsType[];
 	className?: string;
-	category?: string;
+	activePage: string;
+	setActivePage: (name: string) => void;
+	navTitle?: string;
 }
 
 export interface FeaturesProps {
